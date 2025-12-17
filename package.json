@@ -2,6 +2,7 @@
   "name": "friendly-loving-frog",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://wogny.github.io/PROJETO-120-DIAS",
   "dependencies": {
     "@teleporthq/react-components": "latest",
     "dangerous-html": "0.1.13",
