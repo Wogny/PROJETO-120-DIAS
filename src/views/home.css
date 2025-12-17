@@ -518,7 +518,7 @@
   background: rgba(15, 23, 42, 0.8);
   border: 1px solid rgba(148, 163, 184, 0.35);
   color: #e5edf1;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .home-offer-check {
@@ -900,13 +900,12 @@
   box-shadow: 0 0 18px rgba(211, 84, 0, 0.55); /* brilho leve */
 }
 
-<<<<<<< HEAD
 /* Caixa opaca neon do preço */
 .cta-price-pill-neon {
   background: rgba(10, 10, 20, 0.9);         /* opaco/dark */
   border-radius: 10px;
   padding: 20px 30px;
-  box-shadow: 0 0 22px #d35400; /* efeito neon (ciano) */
+  box-shadow: 0 0 22px #d35400; /* efeito neon */
 }
 
 /* Opcional: ajustar textos do preço */
@@ -915,96 +914,19 @@
   display: block;
   font-size: 14px;
   color: #e0e6ff;
-=======
-/* linha CTA + preço */
-.cta-bottom-row {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-@media (min-width: 768px) {
-  .cta-bottom-row {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.cta-bottom-left {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.cta-button-lg {
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 14px 32px;
-  border-radius: 999px;
-  white-space: nowrap;
-}
-
-/* Preço à direita, estilizado */
-.cta-price-pill {
-  background: radial-gradient(circle at top left, #f97316, #b45309);
-  padding: 14px 22px;
-  border-radius: 999px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
-  color: #f9fafb;
-  min-width: 190px;
-}
-
-.cta-price-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  opacity: 0.9;
->>>>>>> 76a81fefbcff1ea3052611cc65622500e8afec63
 }
 
 .cta-price-main {
   display: flex;
-<<<<<<< HEAD
   gap: 4px;
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
 }
 
-/* Mensagem de investimento alinhada à direita */
+
 .cta-disclaimer-right {
+  font-size: 18px ;
   text-align: right;
-  margin-top: 8px;
-  color: #d35400;
-  font-size: 18px;
 }
 
-
-=======
-  align-items: baseline;
-  gap: 6px;
-  margin-top: 2px;
-}
-
-.cta-price-times {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.cta-price-value {
-  font-size: 2rem;
-  font-weight: 800;
-}
-
-.cta-price-note {
-  margin-top: 2px;
-  font-size: 0.78rem;
-  opacity: 0.9;
-}
->>>>>>> 76a81fefbcff1ea3052611cc65622500e8afec63
