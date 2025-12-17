@@ -957,3 +957,76 @@
   white-space: nowrap;
 }
 
+/* linha CTA + preço */
+.cta-bottom-row {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .cta-bottom-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cta-bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cta-button-lg {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Preço à direita, estilizado */
+.cta-price-pill {
+  background: radial-gradient(circle at top left, #f97316, #b45309);
+  padding: 14px 22px;
+  border-radius: 999px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+  color: #f9fafb;
+  min-width: 190px;
+}
+
+.cta-price-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+}
+
+.cta-price-main {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.cta-price-times {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.cta-price-value {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.cta-price-note {
+  margin-top: 2px;
+  font-size: 0.78rem;
+  opacity: 0.9;
+}

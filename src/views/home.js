@@ -524,27 +524,34 @@ const Home = () => {
           </div>
 
           <div className="home-offer-cta-row">
-            <div className="home-offer-price-block">
-              <span className="home-offer-price-label">Por apenas</span>
-              <div className="home-offer-price-line">
-                <span className="home-offer-price-times">10x</span>
-                <span className="home-offer-price-value">19,99</span>
+           
+
+            <div className="cta-bottom-row">
+              <div className="cta-bottom-left">
+                <div className="cta-urgency">
+                  {/* ícone + texto de vagas */}
+                  ...
+                </div>
+
+                <button className="cta-button btn btn-primary cta-button-lg">
+                  Garantir minha vaga agora
+                </button>
+
+                <p className="cta-disclaimer">
+                  Investimento único com parcelamento facilitado disponível
+                </p>
               </div>
-              <span className="home-offer-price-note">no cartão • total 199,90</span>
+
+              <div className="cta-price-pill">
+                <span className="cta-price-label">Por apenas</span>
+                <div className="cta-price-main">
+                  <span className="cta-price-times">10x</span>
+                  <span className="cta-price-value">19,99</span>
+                </div>
+                <span className="cta-price-note">no cartão • total 199,99</span>
+              </div>
             </div>
-
-            <a
-              href="https://seu-link-de-checkout-ou-whatsapp"
-              target="_blank"
-              rel="noreferrer"
-              className="home-btn home-btn-primary home-offer-cta-small"
-            >
-              Garantir minha vaga agora
-            </a>
-
-
-
-
+            
             <p className="home-offer-note">
               Investimento único com parcelamento facilitado disponível.
             </p>
