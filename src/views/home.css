@@ -518,7 +518,7 @@
   background: rgba(15, 23, 42, 0.8);
   border: 1px solid rgba(148, 163, 184, 0.35);
   color: #e5edf1;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .home-offer-check {
@@ -905,7 +905,7 @@
   background: rgba(10, 10, 20, 0.9);         /* opaco/dark */
   border-radius: 10px;
   padding: 20px 30px;
-  box-shadow: 0 0 22px #d35400; /* efeito neon (ciano) */
+  box-shadow: 0 0 22px #d35400; /* efeito neon */
 }
 
 /* Opcional: ajustar textos do preço */
@@ -924,10 +924,9 @@
   color: #ffffff;
 }
 
-/* Mensagem de investimento alinhada à direita */
+
 .cta-disclaimer-right {
+  font-size: 18px ;
   text-align: right;
-  margin-top: 8px;
-  color: #d35400;
-  font-size: 18px;
 }
+
