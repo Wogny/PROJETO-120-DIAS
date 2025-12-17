@@ -530,25 +530,14 @@
 /* bloco de garantia */
 
 .home-offer-guarantee {
-  margin-top: 24px;
-  padding: 14px 16px;
-  border-radius: 16px;
+  margin: 24px auto;                        /* centraliza e mantém espaçamento vertical */
+  padding: 14px 18px;                       /* um pouco mais compacto */
+  border-radius: 10px;
   background: rgba(15, 118, 110, 0.14);
   border: 1px solid rgba(34, 197, 94, 0.3);
+  max-width: 1200px;                         /* NOVO: limita a largura do retângulo */
 }
 
-.home-offer-guarantee-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #bbf7d0;
-  margin-bottom: 6px;
-}
-
-.home-offer-guarantee p {
-  font-size: 1.3rem;
-  color: #cbd5f5;
-  margin: 0;
-}
 
 /* parte de baixo: vagas + botão */
 
@@ -850,8 +839,8 @@
 .home-bmi-field select:focus,
 .home-bmi-field input:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.4);
+  border-color: #bf4408;
+  box-shadow: 0 0 0 1px rgba(219, 144, 4, 0.4);
 }
 
 /* card de vagas mais bonito */
@@ -889,71 +878,58 @@
 
 .home-offer-spots-value {
   font-size: 0.9rem;
-  color: #e5f4ea;
+  color: #bf4408;
 }
 
-/* linha preço + botão */
-
-/* linha preço + botão */
-.home-offer-cta-row {
-  margin-top: 20px;
+/* Linha botão + preço */
+.home-offer-cta-row .cta-bottom-row {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 24px;
 }
 
-@media (min-width: 768px) {
-  .home-offer-cta-row {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-/* bloco de preço destacado */
-.home-offer-price-block {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  color: #e5edf1;
-}
-
-.home-offer-price-label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #9ca3af;
-}
-
-.home-offer-price-line {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
-}
-
-.home-offer-price-times {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #f97316;
-}
-
-.home-offer-price-value {
-  font-size: 2.1rem;
-  font-weight: 800;
-  color: #f97316;
-}
-
-.home-offer-price-note {
-  font-size: 0.82rem;
-  color: #9ca3af;
-}
-
-/* botão menor com fonte maior */
-.home-offer-cta-small {
-  padding: 12px 28px;
-  font-size: 1rem;         /* maior que antes */
-  font-weight: 700;
+/* Botão laranja padrão do site */
+.cta-button-orange {
+  background-color: #d35400;  /* ajuste para o laranja exato do seu tema */
+  color: #ffffff;
   border-radius: 999px;
-  white-space: nowrap;
+  padding: 20px 38px;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0 0 18px rgba(211, 84, 0, 0.55); /* brilho leve */
 }
+
+/* Caixa opaca neon do preço */
+.cta-price-pill-neon {
+  background: rgba(10, 10, 20, 0.9);         /* opaco/dark */
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 0 22px #d35400; /* efeito neon (ciano) */
+}
+
+/* Opcional: ajustar textos do preço */
+.cta-price-label,
+.cta-price-note {
+  display: block;
+  font-size: 14px;
+  color: #e0e6ff;
+}
+
+.cta-price-main {
+  display: flex;
+  gap: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Mensagem de investimento alinhada à direita */
+.cta-disclaimer-right {
+  text-align: right;
+  margin-top: 8px;
+  color: #d35400;
+  font-size: 18px;
+}
+
 

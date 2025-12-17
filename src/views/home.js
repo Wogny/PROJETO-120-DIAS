@@ -524,38 +524,39 @@ const Home = () => {
           </div>
 
           <div className="home-offer-cta-row">
-            <div className="home-offer-price-block">
-              <span className="home-offer-price-label">Por apenas</span>
-              <div className="home-offer-price-line">
-                <span className="home-offer-price-times">10x</span>
-                <span className="home-offer-price-value">19,99</span>
-              </div>
-              <span className="home-offer-price-note">no cartão • total 199,90</span>
-            </div>
+  <div className="cta-bottom-row">
+    {/* Botão laranja padrão */}
+    <a
+      href="https://seu-link-de-checkout-ou-whatsapp"
+      target="_blank"
+      rel="noreferrer"
+      className="cta-button cta-button-orange"
+    >
+      Garantir minha vaga agora
+    </a>
 
-            <a
-              href="https://seu-link-de-checkout-ou-whatsapp"
-              target="_blank"
-              rel="noreferrer"
-              className="home-btn home-btn-primary home-offer-cta-small"
-            >
-              Garantir minha vaga agora
-            </a>
+    {/* Caixa opaca neon do preço */}
+    <div className="cta-price-pill cta-price-pill-neon">
+      <span className="cta-price-label">Por apenas</span>
+      <div className="cta-price-main">
+        <span className="cta-price-times">10x</span>
+        <span className="cta-price-value">19,99</span>
+      </div>
+      <span className="cta-price-note">Total 199,99</span>
+    </div>
+  </div>
 
-
-
-
-            <p className="home-offer-note">
-              Investimento único com parcelamento facilitado disponível.
-            </p>
-          </div>
-
+  <p className="cta-disclaimer cta-disclaimer-right">
+    Investimento único com parcelamento facilitado disponível.
+  </p>
+</div>
+ 
         </div>
-      </section>
+      </section >
 
 
       {/* BALÃO FIXO DE WHATSAPP (USANDO SEU CSS EXISTENTE .home-container7) */}
-      <a
+      < a
         href="https://wa.me/5517997510946?text=Quero%20saber%20mais%20sobre%20o%20programa%20de%20120%20dias"
         target="_blank"
         rel="noreferrer"
@@ -564,10 +565,10 @@ const Home = () => {
         <span className="home-text57">
           Falar com o Mateus no WhatsApp
         </span>
-      </a>
+      </a >
 
       <Footer />
-    </div>
+    </div >
   )
 }
 
