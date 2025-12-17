@@ -524,6 +524,7 @@ const Home = () => {
           </div>
 
           <div className="home-offer-cta-row">
+<<<<<<< HEAD
   <div className="cta-bottom-row">
     {/* Botão laranja padrão */}
     <a
@@ -545,6 +546,40 @@ const Home = () => {
       <span className="cta-price-note">Total 199,99</span>
     </div>
   </div>
+=======
+           
+
+            <div className="cta-bottom-row">
+              <div className="cta-bottom-left">
+                <div className="cta-urgency">
+                  {/* ícone + texto de vagas */}
+                  ...
+                </div>
+
+                <button className="cta-button btn btn-primary cta-button-lg">
+                  Garantir minha vaga agora
+                </button>
+
+                <p className="cta-disclaimer">
+                  Investimento único com parcelamento facilitado disponível
+                </p>
+              </div>
+
+              <div className="cta-price-pill">
+                <span className="cta-price-label">Por apenas</span>
+                <div className="cta-price-main">
+                  <span className="cta-price-times">10x</span>
+                  <span className="cta-price-value">19,99</span>
+                </div>
+                <span className="cta-price-note">no cartão • total 199,99</span>
+              </div>
+            </div>
+            
+            <p className="home-offer-note">
+              Investimento único com parcelamento facilitado disponível.
+            </p>
+          </div>
+>>>>>>> 76a81fefbcff1ea3052611cc65622500e8afec63
 
   <p className="cta-disclaimer cta-disclaimer-right">
     Investimento único com parcelamento facilitado disponível.
