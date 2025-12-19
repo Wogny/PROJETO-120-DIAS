@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PROJETO-120-DIAS/static/css/main.6dcf84ac.css",
+    "main.js": "/PROJETO-120-DIAS/static/js/main.a2998ae3.js",
+    "index.html": "/PROJETO-120-DIAS/index.html",
+    "main.6dcf84ac.css.map": "/PROJETO-120-DIAS/static/css/main.6dcf84ac.css.map",
+    "main.a2998ae3.js.map": "/PROJETO-120-DIAS/static/js/main.a2998ae3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6dcf84ac.css",
+    "static/js/main.a2998ae3.js"
+  ]
+}

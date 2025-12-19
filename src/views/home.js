@@ -97,13 +97,10 @@ const Home = () => {
 
           <div className="home-about-photo">
             <img
-              src="/img/imgmateus.jpg"
+              src={process.env.PUBLIC_URL + '/img/imgmateus.jpg'}
               alt="Mateus Casarini"
               className="home-about-img"
             />
-            <span className="home-about-badge">
-              +8 anos transformando corpos
-            </span>
           </div>
         </div>
       </section>
@@ -189,12 +186,12 @@ const Home = () => {
 
             {/* 2 */}
             <div className="home-step">
-              <div className="home-step-circle">               
+              <div className="home-step-circle">
                 <span className="home-step-icon">2</span>
               </div>
               <h3 className="home-step-title">Definição de meta</h3>
               <p className="home-step-text">
-                Estabelecemos metas reais com base nas suas possibilidades para os 120 dias.
+                Estabelecemos metas reais com base nas suas possibilidades para os 120 dias.
               </p>
             </div>
 
@@ -238,7 +235,7 @@ const Home = () => {
               </div>
               <h3 className="home-step-title">Ajustes e resultados</h3>
               <p className="home-step-text">
-                Adaptações constantes sempre baseadas na sua evolução, dificuldades e rotina.
+                Adaptações constantes sempre baseadas na sua evolução, dificuldades e rotina.
               </p>
             </div>
           </div>
