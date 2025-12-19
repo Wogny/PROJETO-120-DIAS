@@ -272,6 +272,79 @@
   margin-top: 28px;
 }
 
+.home-pillars {
+  background: #050815;
+}
+
+.home-pillars .home-section-inner {
+  max-width: var(--content-max-width, 76rem);
+  margin: 0 auto;
+}
+
+.home-pillars h2 {
+  font-family: var(--font-family-heading, 'Montserrat', sans-serif);
+  font-size: var(--font-size-3xl, 2.1rem);
+  margin-bottom: 12px;
+}
+
+.home-pillars .home-section-subtitle {
+  font-size: var(--font-size-xl, 1.1rem);
+  color: #cbd5f5;
+  margin-bottom: 24px;
+}
+
+.home-pillars-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.home-pillar-card {
+  padding: 20px 20px 18px;
+  border-radius: 18px;
+  /* fundo mais chamativo */
+  background: radial-gradient(circle at top, #1f2937, #020617);
+  border: 1px solid rgba(251, 146, 60, 0.65); /* laranja forte */
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.85);
+  position: relative;
+  overflow: hidden;
+}
+
+/* barra de destaque no topo do card */
+.home-pillar-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #fb923c, #22c55e);
+  opacity: 0.95;
+}
+
+.home-pillar-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fef9c3; /* amarelo claro chamativo */
+}
+
+.home-pillar-card p {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: #e5edf1;
+}
+
+@media (min-width: 768px) {
+  .home-pillars-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-pillars-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+
 /* responsivo */
 @media (min-width: 768px) {
   .home-benefits-grid {
