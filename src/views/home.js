@@ -42,7 +42,7 @@ const Home = () => {
             <section className="home-hero-bottom">
               <div className="home-hero-highlight-block">
                 <p className="home-hero-highlight">
-                  Sem remédio, sem esteroides anabolizantes, sem foder sua saúde.
+                  Sem remédio, sem esteroides anabolizantes, sem acabar com a sua saúde.
                 </p>
               </div>
 
@@ -97,7 +97,7 @@ const Home = () => {
 
           <div className="home-about-photo">
             <img
-              src={process.env.PUBLIC_URL + '/img/imgmateus.jpg'}
+              src={process.env.PUBLIC_URL + '/img/imgmateus.JPG'}
               alt="Mateus Casarini"
               className="home-about-img"
             />
