@@ -1,9 +1,18 @@
+:root {
+  --color-surface: #050509;           /* fundo geral bem escuro */
+  --color-on-surface: #f9fafb;        /* texto principal */
+  --color-on-surface-secondary: #9ca3af;
+  --color-primary: #ef4444;           /* vermelho principal */
+  --color-primary-dark: #b91c1c;
+}
+
+
 .home-page {
   width: 100%;
   min-height: 100vh;
   font-family: var(--font-family-body, 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif);
-  color: var(--color-on-surface, #f8fbfc);
-  background-color: var(--color-surface, #050816);
+ background-color: #050509;
+  color: #f9fafb;
 }
 
 /* HERO */
@@ -55,17 +64,38 @@
 
 
 .home-hero {
-  width: 100%;
-  padding: 64px 16px 48px;
+  position: relative;
+  padding: 80px 16px 72px;
   display: flex;
   justify-content: center;
+  color: #f9fafb;
+
+
+  /* imagem de fundo */
+  background-image: url('/PROJETO-120-DIAS/img/hero-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* overlay escuro para o texto ficar legível */
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(0,0,0,0.3), rgba(0,0,0,0.85));
 }
 
 .home-hero-grid {
+  position: relative;         /* fica acima do overlay */
+  z-index: 1;
+  width: 100%;
+  max-width: var(--content-max-width, 76rem);
   display: grid;
   gap: 32px;
   align-items: center;
 }
+
 
 @media (min-width: 900px) {
   .home-hero-grid {
@@ -77,7 +107,7 @@
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #93c5fd;
+  color: #ef4444;
   margin-bottom: 12px;
 }
 
@@ -105,7 +135,7 @@
   justify-content: center;
   padding: 12px 24px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #2563eb, #fb923c);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   color: #ffffff;
   font-weight: 600;
 }
@@ -113,7 +143,7 @@
 .secondary-cta {
   padding: 12px 18px;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.6);
+  border: 1px solid rgba(248, 113, 113, 0.6);
   background: transparent;
   color: #e5edf1;
   font-weight: 500;
@@ -138,7 +168,7 @@
 }
 
 .home-hero h1 .hero-highlight {
-  color: #fb923c;
+  color: #ef4444;
   /* cor de destaque (laranja) */
   /* opcional:
   text-shadow: 0 0 18px rgba(251, 146, 60, 0.35);
@@ -365,9 +395,9 @@
   padding: 20px 20px 18px;
   border-radius: 18px;
   /* fundo mais chamativo */
-  background: radial-gradient(circle at top, #1f2937, #020617);
-  border: 1px solid rgba(251, 146, 60, 0.65); /* laranja forte */
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.85);
+  background: radial-gradient(circle at top, #171717, #02040a);
+  border: 1px solid rgba(239, 68, 68, 0.8); /* vermelho logo */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
   position: relative;
   overflow: hidden;
 }
@@ -386,8 +416,8 @@
   font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #fef9c3; /* amarelo claro chamativo */
-}
+   color: #fee2e2;
+      }
 
 .home-pillar-card p {
   font-size: 0.94rem;
@@ -442,10 +472,7 @@
 }
 
 .home-result-image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
+  height: 260px;
 }
 
 .home-result-img {
@@ -472,7 +499,7 @@
 }
 
 .home-result-content {
-  padding: 16px 18px 18px;
+  padding-top: 14px;
 }
 
 .home-result-stars {
@@ -601,20 +628,20 @@
 }
 
 .home-btn-primary {
-  background-color: var(--dl-color-theme-primary1, #bf4408);
+  background-color: var(--dl-color-theme-primary1, #ef4444);
   color: var(--color-on-primary, #ffffff);
-  border-color: var(--dl-color-theme-primary1, #bf4408);
+  border-color: var(--dl-color-theme-primary1, #ef4444);
 }
 
 .home-btn-primary:hover {
-  background-color: var(--dl-color-theme-primary2, #e65103);
-  border-color: var(--dl-color-theme-primary2, #e65103);
+  background-color: var(--dl-color-theme-primary2, #ef4444);
+  border-color: var(--dl-color-theme-primary2, #ef4444);
 }
 
 .home-btn-secondary {
   background-color: transparent;
-  color: var(--dl-color-theme-primary1, #bf4408);
-  border-color: var(--dl-color-theme-primary1, #bf4408);
+  color: var(--dl-color-theme-primary1, #ef4444);
+  border-color: var(--dl-color-theme-primary1, #ef4444);
 }
 
 .home-btn-secondary:hover {
