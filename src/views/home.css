@@ -68,7 +68,7 @@
 
 .home-hero h1 {
   font-family: var(--font-family-heading, 'Montserrat', sans-serif);
-  font-size: clamp(1.2rem, 3vw, 3.0rem); /* responsivo para a página */
+  font-size: clamp(1.8rem, 4vw, 3.0rem); /* responsivo para a página */
   line-height: var(--line-height-heading, 1.15);
   margin-bottom: 40px;
 }
@@ -123,6 +123,13 @@
   color: var(--color-on-surface-secondary, #c8d4da);
 }
 
+.home-hero-bott li{
+  margin: 16px 0 24px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  color: var(--color-on-surface-secondary, #c8d4da);
+  margin-bottom: 10;
+}
 
 /* SEÇÕES GERAIS */
 

@@ -46,11 +46,11 @@ const Home = () => {
                 </p>
               </div>
 
-              <p className="home-hero-bott">
-                Não é planilha 3 de 10, eu não vou fazer você perder tempo, eu respeito seu dinheiro e sei que
-                você já tentou de tudo e sempre acaba sendo mais do mesmo. treinos genéricos, dietas
-                malucas e te forçando a usar as paradinhas “se não, não vai”
-              </p>
+              <ul className="home-hero-bott">
+                <li>Não é mais uma planilha genérica 3 de 10 para te fazer perder tempo.</li>
+                <li>Respeito seu dinheiro e o fato de que você já tentou de tudo e cansou de mais do mesmo.</li>
+                <li>Aqui não tem treino genérico, dieta maluca nem pressão para usar “paradinha” nenhuma.</li>
+              </ul>
 
               <a
                 href="#checkout"
