@@ -19,49 +19,45 @@ const Home = () => {
 
       {/* HERO – PROMESSA PRINCIPAL */}
       <section className="home-hero">
-        <div className="home-section-inner">
+        <div className="home-section-inner home-hero-grid">
           <div className="home-hero-content">
-            <h1>O MAPA
-              EXATO PARA{" "}
-              <span className="hero-highlight">TRANSFORMAR</span> SEU{" "}
-              <span className="hero-highlight">SHAPE</span> EM 120 DIAS</h1>
+            <p className="home-hero-tag">Programa 120 Dias • Acompanhamento individual</p>
+
+            <h1>
+              O passo a passo para transformar seu shape em 120 dias
+              <span className="hero-highlight"> sem bomba, dieta maluca ou planilha genérica.</span>
+            </h1>
 
             <p className="home-hero-subtitle">
-              Sem dietas <span className="hero-highlight">caras</span> e treinos cheio de <span className="hero-highlight">firulas</span>
+              Plano de treino e dieta feito para a sua rotina, com acompanhamento ativo no WhatsApp
+              para você finalmente ver resultado de verdade no espelho.
             </p>
 
-            <p className="home-hero-subtitle">
-              Se você seguir esse plano, seu corpo não será mais o mesmo.
-            </p>
+            <ul className="home-hero-bullets">
+              <li>Diagnóstico 360° do seu ponto de partida e do seu objetivo.</li>
+              <li>Dieta simples, barata e de fácil adesão, com substituições.</li>
+              <li>Treino para naturais com progressão clara e vídeos de execução.</li>
+              <li>Contato direto com Mateus para ajustes semanais.</li>
+            </ul>
 
-
-
-
-
-
-            <section className="home-hero-bottom">
-              <div className="home-hero-highlight-block">
-                <p className="home-hero-highlight">
-                  Sem remédio, sem esteroides anabolizantes, sem acabar com a sua saúde.
-                </p>
-              </div>
-
-              <ul className="home-hero-bott">
-                <li>Não é mais uma planilha genérica 3 de 10 para te fazer perder tempo.</li>
-                <li>Respeito seu dinheiro e o fato de que você já tentou de tudo e cansou de mais do mesmo.</li>
-                <li>Aqui não tem treino genérico, dieta maluca nem pressão para usar “paradinha” nenhuma. </li>
-              </ul>
-
-              <a
-                href="#checkout"
-                className="home-btn home-btn-primary"
-              >
+            <div className="home-hero-cta-row">
+              <a href="#form" className="primary-cta">
                 Quero começar minha transformação
               </a>
-            </section>
+              <button className="secondary-cta">
+                Ver resultados de alunos
+              </button>
+            </div>
+
+            <p className="home-hero-proof">
+              +X alunos acompanhados e resultados reais em até 120 dias.
+            </p>
           </div>
+
+          {/* se quiser, manter aqui uma imagem/colagem no lado direito */}
         </div>
       </section>
+
 
 
       {/* QUEM VAI TE ACOMPANHAR */}
@@ -81,7 +77,7 @@ const Home = () => {
 
               <div className="home-inline-photo">
                 <img
-                  src={process.env.PUBLIC_URL + '/img/imgmateus.jpg'}
+                  src={process.env.PUBLIC_URL + '/img/imgmateus.JPG'}
                   alt="Mateus Casarini"
                 />
               </div>
