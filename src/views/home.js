@@ -49,7 +49,7 @@ const Home = () => {
               <ul className="home-hero-bott">
                 <li>Não é mais uma planilha genérica 3 de 10 para te fazer perder tempo.</li>
                 <li>Respeito seu dinheiro e o fato de que você já tentou de tudo e cansou de mais do mesmo.</li>
-                <li>Aqui não tem treino genérico, dieta maluca nem pressão para usar “paradinha” nenhuma.</li>
+                <li>Aqui não tem treino genérico, dieta maluca nem pressão para usar “paradinha” nenhuma. </li>
               </ul>
 
               <a
@@ -97,7 +97,7 @@ const Home = () => {
 
           <div className="home-about-photo">
             <img
-              src="/img/mateus.jpg"
+              src="/img/imgmateus.jpg"
               alt="Mateus Casarini"
               className="home-about-img"
             />
@@ -113,18 +113,17 @@ const Home = () => {
         <div className="home-section-inner">
           <h2>O que você recebe no programa</h2>
           <p className="home-section-subtitle">
-            Tudo que você precisa para alcançar seus objetivos em 120 dias.
+            Tudo que você terá acesso dentro do projeto Transformação em 120 Dias.
           </p>
 
           <div className="home-benefits-grid">
             <article className="home-benefit-card">
               <div className="home-benefit-icon">
-                <span>📅</span>
+                <span>🏋️</span>
               </div>
-              <h3 className="home-benefit-title">Acompanhamento contínuo</h3>
+              <h3 className="home-benefit-title">Fichas de Treinos</h3>
               <p className="home-benefit-text">
-                Suporte diário e semanal durante todos os 120 dias do programa, com
-                ajustes conforme sua evolução.
+                Treinamento progressivo e ajustado para o seu perfil, tendo em vista seus pontos negativos e positivos.
               </p>
             </article>
 
@@ -132,21 +131,19 @@ const Home = () => {
               <div className="home-benefit-icon">
                 <span>🍽️</span>
               </div>
-              <h3 className="home-benefit-title">Dietas personalizadas</h3>
+              <h3 className="home-benefit-title">Dietas com Base na sua Ingestão Calórica</h3>
               <p className="home-benefit-text">
-                Planos nutricionais elaborados especificamente para seu objetivo e
-                rotina, com cardápios variados e fáceis de seguir.
+                Planos nutricionais totalmente pensados nas suas especificações metabólicas.
               </p>
             </article>
 
             <article className="home-benefit-card">
               <div className="home-benefit-icon">
-                <span>🏋️</span>
+                <span>📅</span>
               </div>
-              <h3 className="home-benefit-title">Planilhas de treino</h3>
+              <h3 className="home-benefit-title">Calculadora de Gasto Calórico</h3>
               <p className="home-benefit-text">
-                Treinos profissionais adaptados ao seu nível, com progressão
-                estratégica para garantir resultados.
+                A calculadora de gasto calórico tem como função tirar a média de quantas calorias você gasta por dia; dessa forma, conseguirei especificar mais ainda sua dieta.
               </p>
             </article>
 
@@ -154,10 +151,9 @@ const Home = () => {
               <div className="home-benefit-icon">
                 <span>💬</span>
               </div>
-              <h3 className="home-benefit-title">Suporte do personal</h3>
+              <h3 className="home-benefit-title">Materiais em Video, PDF e Suporte a Qualquer Momento</h3>
               <p className="home-benefit-text">
-                Acesso direto ao Mateus Casarini para tirar dúvidas, receber motivação
-                e ajustar sua estratégia.
+                Acesso a diversos conteúdos de treino, como vídeos de execução e aulas exclusivas. E estarei à disposição sempre que você necessitar.
               </p>
             </article>
           </div>
@@ -176,15 +172,14 @@ const Home = () => {
         <div className="home-section-inner">
           <h2>Como funciona o programa</h2>
           <p className="home-section-subtitle">
-            6 etapas estruturadas para a sua transformação completa em 120 dias.
+            Métodos eficazes e que realmente funcionam. A indústria fitness mentiu pra você...
           </p>
 
           <div className="home-steps-timeline">
             {/* 1 */}
             <div className="home-step">
               <div className="home-step-circle">
-                <span className="home-step-number">01</span>
-                <span className="home-step-icon">🎯</span>
+                <span className="home-step-icon">1</span>
               </div>
               <h3 className="home-step-title">Avaliação inicial</h3>
               <p className="home-step-text">
@@ -194,61 +189,56 @@ const Home = () => {
 
             {/* 2 */}
             <div className="home-step">
-              <div className="home-step-circle">
-                <span className="home-step-number">02</span>
-                <span className="home-step-icon">📌</span>
+              <div className="home-step-circle">               
+                <span className="home-step-icon">2</span>
               </div>
               <h3 className="home-step-title">Definição de meta</h3>
               <p className="home-step-text">
-                Estabelecemos metas realistas e mensuráveis para os 120 dias.
+                Estabelecemos metas reais com base nas suas possibilidades para os 120 dias.
               </p>
             </div>
 
             {/* 3 */}
             <div className="home-step">
               <div className="home-step-circle">
-                <span className="home-step-number">03</span>
-                <span className="home-step-icon">🍽️</span>
+                <span className="home-step-icon">3</span>
               </div>
               <h3 className="home-step-title">Plano nutricional</h3>
               <p className="home-step-text">
-                Dieta personalizada com cardápios semanais e lista de compras.
+                Dieta personalizada com cardápios semanais e lista de alimentos bons.
               </p>
             </div>
 
             {/* 4 */}
             <div className="home-step">
               <div className="home-step-circle">
-                <span className="home-step-number">04</span>
-                <span className="home-step-icon">🏋️</span>
+                <span className="home-step-icon">4</span>
               </div>
               <h3 className="home-step-title">Planilha de treinos</h3>
               <p className="home-step-text">
-                Treinos específicos com exercícios detalhados e progressão.
+                Treinos específicos com exercícios detalhados para você e progressão gradual sempre visando sua segurança.
               </p>
             </div>
 
             {/* 5 */}
             <div className="home-step">
               <div className="home-step-circle">
-                <span className="home-step-number">05</span>
-                <span className="home-step-icon">📲</span>
+                <span className="home-step-icon">5</span>
               </div>
               <h3 className="home-step-title">Acompanhamento ativo</h3>
               <p className="home-step-text">
-                Check-ins regulares e suporte direto via WhatsApp.
+                Atualizações sobre seus treinos e sua alimentação. Disponibilidade a qualquer momento.
               </p>
             </div>
 
             {/* 6 */}
             <div className="home-step">
               <div className="home-step-circle">
-                <span className="home-step-number">06</span>
-                <span className="home-step-icon">📈</span>
+                <span className="home-step-icon">6</span>
               </div>
               <h3 className="home-step-title">Ajustes e resultados</h3>
               <p className="home-step-text">
-                Adaptações constantes baseadas na sua evolução e rotina.
+                Adaptações constantes sempre baseadas na sua evolução, dificuldades e rotina.
               </p>
             </div>
           </div>
@@ -536,12 +526,12 @@ const Home = () => {
 
               {/* Caixa opaca neon do preço */}
               <div className="cta-price-pill cta-price-pill-neon">
-                <span className="cta-price-label">Por apenas</span>
+                <span className="cta-price-label">POR APENAS</span>
                 <div className="cta-price-main">
                   <span className="cta-price-times">10x</span>
                   <span className="cta-price-value">19,99</span>
                 </div>
-                <span className="cta-price-note">Total 199,99</span>
+                <span className="cta-price-note">TOTAL 199,99</span>
               </div>
             </div>
 
