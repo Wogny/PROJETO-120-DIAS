@@ -70,7 +70,7 @@
   font-family: var(--font-family-heading, 'Montserrat', sans-serif);
   font-size: clamp(2.2rem, 4vw, 3.4rem); /* responsivo para a página */
   line-height: var(--line-height-heading, 1.15);
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 
 .home-hero h1 .hero-highlight {
@@ -81,9 +81,9 @@
 }
 
 .home-hero-subtitle {
-  font-size: var(--font-size-xl, 1.1rem);
+  font-size: var(--font-size-x1, 1.7rem);
   color: var(--color-on-surface-secondary, #c8d4da);
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 
 .home-hero p .hero-highlight {
@@ -116,16 +116,13 @@
 
 
 
-.home-hero-list {
+.home-hero-bott {
   margin: 16px 0 24px;
   padding-left: 20px;
   font-size: 1.2rem;
   color: var(--color-on-surface-secondary, #c8d4da);
 }
 
-.home-hero-list li {
-  margin-bottom: 6px;
-}
 
 /* SEÇÕES GERAIS */
 

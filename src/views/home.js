@@ -31,9 +31,7 @@ const Home = () => {
             </p>
 
             <p className="home-hero-subtitle">
-              Acompanhamento personalizado com dieta profissional, treinos planejados
-              e suporte direto para emagrecer, ganhar peso ou construir músculo com
-              segurança.
+              Se você seguir esse plano, seu corpo não será mais o mesmo.
             </p>
 
 
@@ -44,16 +42,15 @@ const Home = () => {
             <section className="home-hero-bottom">
               <div className="home-hero-highlight-block">
                 <p className="home-hero-highlight">
-                  Não é só uma planilha genérica: é um plano criado para a sua rotina,
-                  com ajustes semanais conforme a sua evolução.
+                  Sem remédio, sem esteroides anabolizantes, sem foder sua saúde.
                 </p>
               </div>
 
-              <ul className="home-hero-list">
-                <li>Dieta personalizada para sua rotina e preferências alimentares</li>
-                <li>Treinos profissionais com progressão estratégica</li>
-                <li>Suporte diário e semanal durante todos os 120 dias</li>
-              </ul>
+              <p className="home-hero-bott">
+                Não é planilha 3 de 10, eu não vou fazer você perder tempo, eu respeito seu dinheiro e sei que
+                você já tentou de tudo e sempre acaba sendo mais do mesmo. treinos genéricos, dietas
+                malucas e te forçando a usar as paradinhas “se não, não vai”
+              </p>
 
               <a
                 href="#checkout"
