@@ -21,11 +21,13 @@ const Home = () => {
       <section className="home-hero">
         <div className="home-section-inner">
           <div className="home-hero-content">
-            <h1>Transforme seu corpo em 120 dias</h1>
+            <h1>O 
+               EXATO PARA{" "}
+              <span className="hero-highlight">TRANSFORMAR</span> SEU{" "}
+              <span className="hero-highlight">SHAPE</span> EM 120 DIAS</h1>
 
             <p className="home-hero-subtitle">
-              Para quem está cansado de tentar dietas soltas e treinos aleatórios e quer
-              um plano claro para seguir pelos próximos 120 dias.
+              Sem dietas <span className="hero-highlight">caras</span> e treinos cheio de <span className="hero-highlight">firulas</span>
             </p>
 
             <p className="home-hero-subtitle">
@@ -524,33 +526,33 @@ const Home = () => {
           </div>
 
           <div className="home-offer-cta-row">
-  <div className="cta-bottom-row">
-    {/* Botão laranja padrão */}
-    <a
-      href="https://seu-link-de-checkout-ou-whatsapp"
-      target="_blank"
-      rel="noreferrer"
-      className="cta-button cta-button-orange"
-    >
-      Garantir minha vaga agora
-    </a>
+            <div className="cta-bottom-row">
+              {/* Botão laranja padrão */}
+              <a
+                href="https://seu-link-de-checkout-ou-whatsapp"
+                target="_blank"
+                rel="noreferrer"
+                className="cta-button cta-button-orange"
+              >
+                Garantir minha vaga agora
+              </a>
 
-    {/* Caixa opaca neon do preço */}
-    <div className="cta-price-pill cta-price-pill-neon">
-      <span className="cta-price-label">Por apenas</span>
-      <div className="cta-price-main">
-        <span className="cta-price-times">10x</span>
-        <span className="cta-price-value">19,99</span>
-      </div>
-      <span className="cta-price-note">Total 199,99</span>
-    </div>
-  </div>
+              {/* Caixa opaca neon do preço */}
+              <div className="cta-price-pill cta-price-pill-neon">
+                <span className="cta-price-label">Por apenas</span>
+                <div className="cta-price-main">
+                  <span className="cta-price-times">10x</span>
+                  <span className="cta-price-value">19,99</span>
+                </div>
+                <span className="cta-price-note">Total 199,99</span>
+              </div>
+            </div>
 
-  <p className="cta-disclaimer cta-disclaimer-right">
-    Investimento único com parcelamento facilitado disponível.
-  </p>
-</div>
- 
+            <p className="cta-disclaimer cta-disclaimer-right">
+              Investimento único com parcelamento facilitado disponível.
+            </p>
+          </div>
+
         </div>
       </section >
 

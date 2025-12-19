@@ -68,15 +68,29 @@
 
 .home-hero h1 {
   font-family: var(--font-family-heading, 'Montserrat', sans-serif);
-  font-size: var(--font-size-4xl, 2.6rem);
-  line-height: var(--line-height-heading, 1.2);
+  font-size: clamp(2.2rem, 4vw, 3.4rem); /* responsivo para a página */
+  line-height: var(--line-height-heading, 1.15);
   margin-bottom: 16px;
+}
+
+.home-hero h1 .hero-highlight {
+  color: #fb923c;          /* cor de destaque (laranja) */
+  /* opcional:
+  text-shadow: 0 0 18px rgba(251, 146, 60, 0.35);
+  */
 }
 
 .home-hero-subtitle {
   font-size: var(--font-size-xl, 1.1rem);
   color: var(--color-on-surface-secondary, #c8d4da);
   margin-bottom: 16px;
+}
+
+.home-hero p .hero-highlight {
+  color: #fb923c;          /* cor de destaque (laranja) */
+  /* opcional:
+  text-shadow: 0 0 18px rgba(251, 146, 60, 0.35);
+  */
 }
 
 .home-hero-bottom {
