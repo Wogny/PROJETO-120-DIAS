@@ -21,8 +21,8 @@ const Home = () => {
       <section className="home-hero">
         <div className="home-section-inner">
           <div className="home-hero-content">
-            <h1>O 
-               EXATO PARA{" "}
+            <h1>O MAPA
+              EXATO PARA{" "}
               <span className="hero-highlight">TRANSFORMAR</span> SEU{" "}
               <span className="hero-highlight">SHAPE</span> EM 120 DIAS</h1>
 
