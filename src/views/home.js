@@ -263,9 +263,9 @@ const Home = () => {
             <article className="home-result-card">
               <div className="home-result-image-wrapper">
                 <img
-                  src="/img/result1.webp"
-                  alt="Antes e depois – Juliana Santos"
-                  className="home-result-image"
+                  src={process.env.PUBLIC_URL + '/img/result1.webp'}
+                  alt="Resultado 1"
+                  className="home-result-img"
                 />
                 <span className="home-result-badge">-18kg</span>
               </div>
@@ -285,9 +285,9 @@ const Home = () => {
             <article className="home-result-card">
               <div className="home-result-image-wrapper">
                 <img
-                  src="/img/result2.jpg"
-                  alt="Antes e depois – Rafael Costa"
-                  className="home-result-image"
+                  src={process.env.PUBLIC_URL + '/img/result2.jpg'}
+                  alt="Resultado 2"
+                  className="home-result-img"
                 />
                 <span className="home-result-badge">+12kg</span>
               </div>
@@ -307,9 +307,9 @@ const Home = () => {
             <article className="home-result-card">
               <div className="home-result-image-wrapper">
                 <img
-                  src="/img/result3.jpg"
-                  alt="Antes e depois – Carla Mendes"
-                  className="home-result-image"
+                  src={process.env.PUBLIC_URL + '/img/result3.jpg'}
+                  alt="Resultado 3"
+                  className="home-result-img"
                 />
                 <span className="home-result-badge">-10kg</span>
               </div>
