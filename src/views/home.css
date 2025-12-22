@@ -1,8 +1,11 @@
 :root {
-  --color-surface: #050509;           /* fundo geral bem escuro */
-  --color-on-surface: #f9fafb;        /* texto principal */
+  --color-surface: #050509;
+  /* fundo geral bem escuro */
+  --color-on-surface: #f9fafb;
+  /* texto principal */
   --color-on-surface-secondary: #9ca3af;
-  --color-primary: #ef4444;           /* vermelho principal */
+  --color-primary: #ef4444;
+  /* vermelho principal */
   --color-primary-dark: #b91c1c;
 }
 
@@ -11,7 +14,7 @@
   width: 100%;
   min-height: 100vh;
   font-family: var(--font-family-body, 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif);
- background-color: #050509;
+  background-color: #050509;
   color: #f9fafb;
 }
 
@@ -83,11 +86,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top left, rgba(0,0,0,0.3), rgba(0,0,0,0.85));
+  background: radial-gradient(circle at top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.85));
 }
 
 .home-hero-grid {
-  position: relative;         /* fica acima do overlay */
+  position: relative;
+  /* fica acima do overlay */
   z-index: 1;
   width: 100%;
   max-width: var(--content-max-width, 76rem);
@@ -298,7 +302,7 @@
 }
 
 .home-inline-photo img {
- width: 80%;
+  width: 80%;
   max-width: 480px;
   height: 260px;
   object-fit: cover;
@@ -396,7 +400,8 @@
   border-radius: 18px;
   /* fundo mais chamativo */
   background: radial-gradient(circle at top, #171717, #02040a);
-  border: 1px solid rgba(239, 68, 68, 0.8); /* vermelho logo */
+  border: 1px solid rgba(239, 68, 68, 0.8);
+  /* vermelho logo */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
   position: relative;
   overflow: hidden;
@@ -416,8 +421,8 @@
   font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 8px;
-   color: #fee2e2;
-      }
+  color: #fee2e2;
+}
 
 .home-pillar-card p {
   font-size: 0.94rem;
@@ -530,6 +535,100 @@
 @media (min-width: 900px) {
   .home-results-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* CARROSSEL DE TRANSFORMAÇÕES ESTILO NATURALS */
+.home-results {
+  background: #050815;
+}
+
+.home-slider-wrapper {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.home-slider-viewport {
+  flex: 1;
+  overflow: hidden;
+}
+
+.home-slider-track {
+  display: flex;
+  gap: 18px;
+  padding: 8px 4px 16px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.home-slider-track::-webkit-scrollbar {
+  display: none;
+  /* Chrome / Edge */
+}
+
+.home-slider-item {
+  min-width: 350px;
+  max-width: 350px;
+  border-radius: 14px;
+  border: 3px solid #ef4444;
+  overflow: hidden;
+  background: #020617;
+}
+
+.home-slider-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Botões de navegação */
+.home-slider-arrow {
+  width: 34px;
+  height: 60px;
+  border-radius: 999px;
+  border: none;
+  background: #ef4444;
+  color: #022c22;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.home-slider-arrow:hover {
+  background: #ffffff;
+  box-shadow: 0 0 16px rgba(34, 197, 94, 0.7);
+  transform: translateY(-1px);
+}
+
+.home-slider-arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+  box-shadow: none;
+}
+
+/* Texto embaixo */
+.home-results-disclaimer {
+  margin-top: 18px;
+  font-size: 0.78rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .home-slider-wrapper {
+    gap: 6px;
+  }
+
+  .home-slider-item img {
+    height: 240px;
   }
 }
 

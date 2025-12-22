@@ -294,83 +294,86 @@ const Home = () => {
       </section >
 
 
-      {/* DEPOIMENTOS / PROVA SOCIAL */}
-      < section className="home-section home-results" >
+      {/* TRANSFORMAÇÕES / CARROSSEL DE IMAGENS */}
+      <section className="home-section home-results">
         <div className="home-section-inner">
-          <h2>Resultados reais de pessoas reais</h2>
+          <p className="home-hero-tag">Você quer ser o próximo?</p>
+          <h2>Mais de 300 transformações com o Projeto 120 Dias</h2>
           <p className="home-section-subtitle">
-            Conheça histórias inspiradoras de transformação em 120 dias.
+            Resultados alcançados entre 1 a 4 meses de acompanhamento individual.
           </p>
 
-          <div className="home-results-grid">
-            {/* Card 1 */}
-            <article className="home-result-card">
-              <div className="home-result-image-wrapper">
-                <img
-                  src={process.env.PUBLIC_URL + '/img/result1.webp'}
-                  alt="Resultado 1"
-                  className="home-result-img"
-                />
-                <span className="home-result-badge">-18kg</span>
-              </div>
-              <div className="home-result-content">
-                <div className="home-result-stars">★★★★★</div>
-                <p className="home-result-text">
-                  “O programa do Mateus mudou minha vida! Perdi 18kg em 120 dias e
-                  ganhei uma nova disposição. As dietas eram fáceis de seguir e os
-                  treinos cabiam na minha rotina.”
-                </p>
-                <p className="home-result-name">Juliana Santos</p>
-                <p className="home-result-meta">34 anos • Emagrecimento</p>
-              </div>
-            </article>
+          <div className="home-slider-wrapper">
+            <button
+              className="home-slider-arrow home-slider-arrow-left"
+              type="button"
+              onClick={() => {
+                const track = document.querySelector(".home-slider-track");
+                if (track) {
+                  track.scrollBy({ left: -300, behavior: "smooth" });
+                }
+              }}
+            >
+              {"<"}
+            </button>
 
-            {/* Card 2 */}
-            <article className="home-result-card">
-              <div className="home-result-image-wrapper">
-                <img
-                  src={process.env.PUBLIC_URL + '/img/result2.jpg'}
-                  alt="Resultado 2"
-                  className="home-result-img"
-                />
-                <span className="home-result-badge">+12kg</span>
+            <div className="home-slider-viewport">
+              <div className="home-slider-track">
+                {/* Cada figure é um antes/depois (ou só depois, se preferir) */}
+                <figure className="home-slider-item">
+                  <img
+                    src={process.env.PUBLIC_URL + "/img/result1.png"}
+                    alt="Transformação 1"
+                  />
+                </figure>
+                <figure className="home-slider-item">
+                  <img
+                    src={process.env.PUBLIC_URL + "/img/result2.jpg"}
+                    alt="Transformação 2"
+                  />
+                </figure>
+                <figure className="home-slider-item">
+                  <img
+                    src={process.env.PUBLIC_URL + "/img/result3.jpg"}
+                    alt="Transformação 3"
+                  />
+                </figure>
+                <figure className="home-slider-item">
+                  <img
+                    src={process.env.PUBLIC_URL + "/img/result4.jpg"}
+                    alt="Transformação 4"
+                  />
+                </figure>
+                <figure className="home-slider-item">
+                  <img
+                    src={process.env.PUBLIC_URL + "/img/result5.jpg"}
+                    alt="Transformação 5"
+                  />
+                </figure>
+                {/* adicione mais figuras conforme tiver imagens */}
               </div>
-              <div className="home-result-content">
-                <div className="home-result-stars">★★★★★</div>
-                <p className="home-result-text">
-                  “Sempre fui magro e tinha dificuldade de ganhar massa. Com o
-                  acompanhamento do Mateus, ganhei 12kg de músculo de forma saudável.
-                  A dieta hipercalórica era surpreendentemente saborosa!”
-                </p>
-                <p className="home-result-name">Rafael Costa</p>
-                <p className="home-result-meta">28 anos • Ganho de Massa</p>
-              </div>
-            </article>
+            </div>
 
-            {/* Card 3 */}
-            <article className="home-result-card">
-              <div className="home-result-image-wrapper">
-                <img
-                  src={process.env.PUBLIC_URL + '/img/result3.jpg'}
-                  alt="Resultado 3"
-                  className="home-result-img"
-                />
-                <span className="home-result-badge">-10kg</span>
-              </div>
-              <div className="home-result-content">
-                <div className="home-result-stars">★★★★★</div>
-                <p className="home-result-text">
-                  “Programa completo e muito bem estruturado. O Mateus está sempre
-                  disponível para ajustar o plano. Me sinto mais confiante e
-                  saudável do que nunca!”
-                </p>
-                <p className="home-result-name">Carla Mendes</p>
-                <p className="home-result-meta">41 anos • Emagrecimento</p>
-              </div>
-            </article>
+            <button
+              className="home-slider-arrow home-slider-arrow-right"
+              type="button"
+              onClick={() => {
+                const track = document.querySelector(".home-slider-track");
+                if (track) {
+                  track.scrollBy({ left: 300, behavior: "smooth" });
+                }
+              }}
+            >
+              {">"}
+            </button>
           </div>
+
+          <p className="home-results-disclaimer">
+            Resultados variam de acordo com dedicação, histórico e ponto de partida de cada aluno.
+          </p>
         </div>
-      </section >
+      </section>
+
 
       <section className="home-section home-bmi">
         <div className="home-section-inner">
